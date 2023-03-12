@@ -23,10 +23,11 @@ These traces correspond to the following program benchmarks:
 - JigSaw 
 
 The race detection algorithms evaluated are:
-- [SyncP](https://dl.acm.org/doi/10.1145/3434317)
-- [WCP](https://arxiv.org/pdf/1704.02432.pdf)
-- [HB](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
-- [SHB](https://dl.acm.org/doi/abs/10.1145/3276515)
+- **Happens-Before (HB) (Lamport, 1976)** [link](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
+- **Schedulable Happens-Before (Mathur et al., 2018)** [link](https://dl.acm.org/doi/abs/10.1145/3276515)
+- **Weak Causally Precedes (Kini et al., 2017)** [link](https://arxiv.org/pdf/1704.02432.pdf)
+- **SyncP (Mathur et al., 2021)** [link](https://dl.acm.org/doi/10.1145/3434317)
+
 
 For each algorithm, the folder `./{algorithm}_missed` contains counterexamples generated for each programming benchmark.  
 For example, for SyncP, `syncp_missed/treeset` contains all the traces generated from the `TreeSet` base trace that contain a race condition which `SyncP` fails to detect.

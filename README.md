@@ -29,5 +29,5 @@ The race detection algorithms evaluated are:
 - **SyncP (Mathur _et al._, 2021)** [[link]](https://dl.acm.org/doi/10.1145/3434317)
 
 
-For each algorithm, the folder `./{algorithm}_missed` contains counterexamples generated for each programming benchmark.  
-For example, for SyncP, `syncp_missed/treeset` contains all the traces generated from the `TreeSet` base trace that contain a race condition which `SyncP` fails to detect.
+The folder `./{algorithm}_missed` contains counterexamples generated for each program benchmark corresponding to the algorithm.  
+For example, `syncp_missed/treeset` contains all the traces generated from the `TreeSet` base trace that each contain a RaceInjector-injected race condition which `SyncP` fails to detect.

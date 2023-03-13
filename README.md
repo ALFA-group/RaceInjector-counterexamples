@@ -17,12 +17,12 @@ For clarifications, please contact Michael (mi27950@mit.edu) or Shashank (shash@
 
 ## Folder structure
 
-`treeset_orig`, `arraylist_orig`, and `jigsaw_orig` are the original _base traces_ collected by Calfuzzer.
+`treeset_orig`, `arraylist_orig`, and `jigsaw_orig` are the original _base traces_ collected by Calfuzzer [[link]](https://github.com/ksen007/calfuzzer).
 
 These traces correspond to the following program benchmarks:
-- TreeSet 
-- ArrayList
-- JigSaw 
+- **TreeSet** [[link]](https://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html)
+- **ArrayList** [[link]](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
+- **JigSaw** [[link]](https://openjdk.org/projects/jigsaw/)
 
 The race detection algorithms evaluated are:
 - **Happens-Before (HB; Lamport, 1976)** [[link]](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
